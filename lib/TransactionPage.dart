@@ -22,15 +22,12 @@ class TransactionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Halaman Transaksi'),
-        
-      ),
+      
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'lib/assets/ojakturu.jpeg'), 
+                'lib/assets/WarmindoStarboy.jpg'), 
             fit: BoxFit.cover,
           ),
         ),
@@ -41,7 +38,7 @@ class TransactionPage extends StatelessWidget {
               transactionNumber: 'WT1202311270001', //ini genertae random ae ataugak id transaksi
               totalAmount: 'Rp 50,000',  //total jumlah harga
             ),
-            // Add other transaction items
+            
           ],
         ),
       ),
@@ -70,7 +67,7 @@ class TransactionCard extends StatelessWidget {
        color: Colors.white.withOpacity(0.5), 
       child: InkWell(
         onTap: () {
-        //navigasi ke halaman detail transaksi yee
+        //navigasi ke halaman detail transaksi ni
         //
         //
         },

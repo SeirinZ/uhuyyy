@@ -4,14 +4,12 @@ class TransactionDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Detail Transaksi'),
-      ),
+      
       body: Container(
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('lib/assets/ojakturu.jpeg'),
+            image: AssetImage('lib/assets/WarmindoStarboy.jpg'),
             fit: BoxFit.cover,
           ),
         ),

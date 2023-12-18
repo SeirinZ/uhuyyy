@@ -55,6 +55,8 @@ flutter:
   assets : 
     - lib/assets/makanan.jpg
     - lib/assets/ojakturu.jpeg
+    - lib/assets/logo warmindo.jpeg
+    - lib/assets/WarmindoStarboy.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
