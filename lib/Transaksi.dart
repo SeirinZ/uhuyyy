@@ -32,6 +32,13 @@ class Transaksi extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.all(16.0),
           children: [
+            Text(
+              'Daftar Transaksi Terbaru',
+              style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
             TransactionCard(
               transactionNumber: 'WT1202311270001', //id transaksi dari db
               totalAmount: 'Rp 50,000',  // jumlah harga itemny

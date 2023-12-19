@@ -25,7 +25,6 @@ class _RegistrasiState extends State<Registrasi> {
           child: Center(
             child: ListView(
               children: [
-               
                 Image.asset(
                   'lib/assets/logo warmindo.jpeg',
                   width: 300.0,
@@ -48,18 +47,28 @@ class _RegistrasiState extends State<Registrasi> {
                           children: [
                             TextField(
                               controller: _usernameController,
-                              decoration:
-                                  InputDecoration(labelText: 'Username'),
+                              decoration: InputDecoration(
+                                labelText: 'Username',
+                                prefixIcon:
+                                    Icon(Icons.person), // Ikon untuk username
+                              ),
                             ),
                             TextField(
                               controller: _passwordController,
                               obscureText: true,
-                              decoration:
-                                  InputDecoration(labelText: 'Password'),
+                              decoration: InputDecoration(
+                                labelText: 'Password',
+                                prefixIcon:
+                                    Icon(Icons.lock), // Ikon untuk password
+                              ),
                             ),
                             TextField(
                               controller: _emailController,
-                              decoration: InputDecoration(labelText: 'Email'),
+                              decoration: InputDecoration(
+                                labelText: 'Email',
+                                prefixIcon:
+                                    Icon(Icons.email), // Ikon untuk email
+                              ),
                             ),
                             SizedBox(height: 20),
                             ElevatedButton(
@@ -67,6 +76,12 @@ class _RegistrasiState extends State<Registrasi> {
                                 // logika saat registrasi yahu
                               },
                               child: Text('Registrasi'),
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(
+                                    Color.fromARGB(255, 67, 29, 114)),
+                                foregroundColor:
+                                    MaterialStateProperty.all(Colors.white),
+                              ),
                             ),
                           ],
                         ),

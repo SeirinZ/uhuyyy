@@ -45,12 +45,18 @@ class _LoginnyaState extends State<Loginnya> {
                         children: [
                           TextField(
                             controller: _usernameController,
-                            decoration: InputDecoration(labelText: 'Username'),
+                            decoration: InputDecoration(
+                              labelText: 'Username',
+                              prefixIcon: Icon(Icons.person),
+                            ),
                           ),
                           TextField(
                             controller: _passwordController,
                             obscureText: true,
-                            decoration: InputDecoration(labelText: 'Password'),
+                            decoration: InputDecoration(
+                              labelText: 'Password',
+                              prefixIcon: Icon(Icons.lock),
+                            ),
                           ),
                           SizedBox(height: 20),
                           ElevatedButton(
@@ -58,6 +64,12 @@ class _LoginnyaState extends State<Loginnya> {
                               // Logika login di sini ye
                             },
                             child: Text('Login'),
+                            style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Color.fromARGB(255, 67, 29, 114)),
+                              foregroundColor:
+                                  MaterialStateProperty.all(Colors.white),
+                            ),
                           ),
                           SizedBox(height: 10),
                           ElevatedButton(
@@ -65,6 +77,12 @@ class _LoginnyaState extends State<Loginnya> {
                               // Logika registrasi di sini yee
                             },
                             child: Text('Register'),
+                            style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Color.fromARGB(255, 67, 29, 114)),
+                              foregroundColor:
+                                  MaterialStateProperty.all(Colors.white),
+                            ),
                           ),
                         ],
                       ),
