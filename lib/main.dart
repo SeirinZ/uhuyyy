@@ -3,6 +3,7 @@ import 'LoginPage.dart';
 import 'RegisterPage.dart';
 import 'TransactionPage.dart';
 import 'TransactionDetailPage.dart';
+import 'DashboardPage.dart'; // Import DashboardPage
 
 void main() {
   runApp(MyApp());
@@ -16,10 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/login',
+      initialRoute: '/dashboard', 
       routes: {
         '/login': (context) => LoginPage(),
         '/register': (context) => RegisterPage(),
+        '/dashboard': (context) => DashboardPage(), 
         '/transaction': (context) => TransactionPage(),
         '/transaction-detail': (context) => TransactionDetailPage(),
       },
