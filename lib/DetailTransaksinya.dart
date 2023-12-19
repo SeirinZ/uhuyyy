@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TransactionDetailPage extends StatelessWidget {
+class DetailTransaksinya extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class TransactionDetailPage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0),
               ),
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withOpacity(0.6),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

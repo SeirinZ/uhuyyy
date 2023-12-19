@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class RegisterPage extends StatefulWidget {
+class Registrasi extends StatefulWidget {
   @override
-  _RegisterPageState createState() => _RegisterPageState();
+  _RegistrasiState createState() => _RegistrasiState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _RegistrasiState extends State<Registrasi> {
   TextEditingController _usernameController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   TextEditingController _emailController = TextEditingController();
@@ -39,7 +39,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withOpacity(0.6),
                     child: SingleChildScrollView(
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),

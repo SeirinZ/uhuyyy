@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
+class Loginnya extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LoginnyaState createState() => _LoginnyaState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginnyaState extends State<Loginnya> {
   TextEditingController _usernameController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Padding(
           padding: EdgeInsets.all(16.0),
           child: Center(
-            child: ListView(             
+            child: ListView(
               children: [
                 Image.asset(
                   'lib/assets/logo warmindo.jpeg',
@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withOpacity(0.6),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(

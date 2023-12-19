@@ -13,21 +13,19 @@ class MyApp extends StatelessWidget {
         
         fontFamily: 'Roboto',
       ),
-      home: TransactionPage(),
+      home: Transaksi(),
     );
   }
 }
 
-class TransactionPage extends StatelessWidget {
+class Transaksi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-                'lib/assets/WarmindoStarboy.jpg'), 
+            image: AssetImage('lib/assets/WarmindoStarboy.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -35,12 +33,19 @@ class TransactionPage extends StatelessWidget {
           padding: EdgeInsets.all(16.0),
           children: [
             TransactionCard(
-              transactionNumber: 'WT1202311270001', //ini genertae random ae ataugak id transaksi
-              totalAmount: 'Rp 50,000',  //total jumlah harga
+              transactionNumber: 'WT1202311270001', //id transaksi dari db
+              totalAmount: 'Rp 50,000',  // jumlah harga itemny
             ),
             
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.indigo,
       ),
     );
   }
@@ -64,7 +69,7 @@ class TransactionCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(10.0),
       ),
       margin: EdgeInsets.only(bottom: 16.0),
-       color: Colors.white.withOpacity(0.5), 
+       color: Colors.white.withOpacity(0.6), 
       child: InkWell(
         onTap: () {
         //navigasi ke halaman detail transaksi ni

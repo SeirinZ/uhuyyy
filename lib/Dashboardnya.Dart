@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DashboardPage extends StatelessWidget {
+class Dashboardnya extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class DashboardPage extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white.withOpacity(0.6),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
@@ -43,13 +43,13 @@ class DashboardPage extends StatelessWidget {
                             onPressed: () {
                               // Implementasi aksi ketika tombol ditekan
                             },
-                            child: Text('Shift Pagi 06.00 - 17.59'),
+                            child: Text('Shift Siang 11.00 - 16.59'),
                           ),
                           ElevatedButton(
                             onPressed: () {
                               // Implementasi aksi ketika tombol ditekan
                             },
-                            child: Text('Shift Malam 18.00 - 05.59'),
+                            child: Text('Shift Malam 17.00 - 23.00'),
                           ),
                           
                         ],
@@ -68,6 +68,6 @@ class DashboardPage extends StatelessWidget {
 
 void main() {
   runApp(MaterialApp(
-    home: DashboardPage(),
+    home: Dashboardnya(),
   ));
 }
