@@ -3,7 +3,7 @@ import 'Loginnya.dart';
 import 'Registrasi.dart';
 import 'Transaksi.dart';
 import 'DetailTransaksinya.dart';
-import 'Dashboardnya.dart'; // Import DashboardPage
+import 'Dashboardnya.dart'; 
 
 void main() {
   runApp(MyApp());

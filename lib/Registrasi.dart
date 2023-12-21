@@ -13,6 +13,16 @@ class _RegistrasiState extends State<Registrasi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Detail Transaksi'),
+        backgroundColor: Colors.indigo,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context); // Untuk kembali ke halaman sebelumnya
+          },
+        ),
+      ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
